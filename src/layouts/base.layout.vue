@@ -30,6 +30,8 @@ const tools = computed<ToolCategory[]>(() => [
   ...(favoriteTools.value.length > 0 ? [{ name: t('tools.categories.favorite-tools'), components: favoriteTools.value }] : []),
   ...toolsByCategory.value,
 ]);
+
+const showModal = ref(false);
 </script>
 
 <template>
@@ -106,16 +108,26 @@ const tools = computed<ToolCategory[]>(() => [
         <c-tooltip position="bottom" :tooltip="$t('home.support')">
           <c-button
             round
-            href="https://www.buymeacoffee.com/cthmsst"
             rel="noopener"
-            target="_blank"
             class="support-button"
             :bordered="false"
-            @click="() => tracker.trackEvent({ eventName: 'Support button clicked' })"
+            @click="() => showModal = true"
           >
             {{ $t('home.buyMeACoffee') }}
             <NIcon v-if="!styleStore.isSmallScreen" :component="Heart" ml-2 />
           </c-button>
+          <n-modal v-model:show="showModal">
+            <n-card
+              style="width: 450px"
+              title="赞赏码"
+              :bordered="false"
+              size="large"
+              role="dialog"
+              aria-modal="true"
+            >
+              <img src="/wx-tip.jpg" alt="赞赏码" style="width:100%">
+            </n-card>
+          </n-modal>
         </c-tooltip>
       </div>
       <slot />
