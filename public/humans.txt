@@ -2,3 +2,7 @@
 Developer: Corentin Thomasset
 Site: https://github.com/CorentinTh
 Twitter: @cthmsst
+
+Changes
+Devaloper: AlbertD-byte
+Site: https://github.com/AlbertD-byte
