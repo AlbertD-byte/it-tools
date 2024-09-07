@@ -688,7 +688,11 @@ Public License instead of this License.  But first, please read
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-源系统由CorentinTh Corentin THOMASSET在github上发布，本系统代码自<https://github.com/CorentinTh/it-tools>拉取，并做了一些修改，修改后的代码遵循GPLv3协议。作者(邮箱:dingqingsong01@139.com)修改后系统在<https://sonamu.xyz>上提供服务，主要修改内容：
+源系统由CorentinTh Corentin THOMASSET在github上发布，
+本系统代码自<https://github.com/CorentinTh/it-tools>拉取，
+并做了一些修改，修改后的代码遵循GPLv3协议。
+作者(邮箱:dingqingsong01@139.com)修改后系统在<https://sonamu.xyz>上提供服务。
+主要修改内容：
 1>. 修改网站备案，以符合中国法律法规；
 2>. 修改赞赏二维码，以支持网站正常运营；
 3>. 修改网站源码链接地址，以符合GPLv3协议。
